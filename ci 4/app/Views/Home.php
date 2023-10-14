@@ -1,4 +1,8 @@
-    
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        #include file="include_head.html"
+    </head>
     <body>
         <!-- PRE LOADER -->
         <div class="preloader">
