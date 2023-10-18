@@ -1,204 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-        </script>
-        <script> 
-            $(function(){
-            $("#header").load("parts/Header.html"); 
-            $("#footer").load("parts/Footer.html"); 
-            });
-        </script> 
-        <div id="header"></div>
-    </head> 
-    <body>
-        <!-- PRE LOADER -->
-        <div class="preloader">
-             <div class="sk-spinner sk-spinner-pulse"></div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Iqbal Rahman | Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Iqbal Rahman</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Website Designer,Website Developer, Freelance Programmer, Photographer"></span></h1>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/iqbal.rahman.3154/"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://wa.me/6287853008599"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="https://instagram.com/iqbalee_r"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/iqbalrahman-dev/"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="mailto:iqbalrahman.amd@gmail.com"><i class="bi bi-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/foto.jpg" class="img-responsive" alt="Iqbal Rahman">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">im a Fullstack Web Developer who loves clean, simple & unique design. i also enjoy learning new stuff, to gain knowledge</p>
+              <p class="separator">im 20 years old and im a D3 informatics engineering (IT) from Electronic Engineering Polytechnic Institute of Surabaya (PENS), Indonesia.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>WEB PROGRAMMING</span>
+                <p class="separator">I love to build a website with beautifull design</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>WEB DESIGN</span>
+                <p class="separator">Design a web is a fun thing to paint my creative</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-binoculars"></i>
+                <span>WEB RESPONSIVE</span>
+                <p class="separator">The tricky part of build the website is responsive</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brightness-high"></i>
+                <span>Analytics</span>
+                <p class="separator">Analytics and problem solving is a brain of a Programmer</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-calendar4-week"></i>
+                <span>PHOTOGRAPHY</span>
+                <p class="separator">I like to take picture of a beautifull place and angle</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <!-- Navigation Section -->
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
+      </div>
 
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                    </button>
-                    <a href="index.html" class="navbar-brand">IQBAL RAHMAN</a>
-                </div>
+    </div><!-- End Services Section -->
 
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About Me</a></li>
-                        <li><a href="Project.html">My Project</a></li>
-                    </ul>
-                </div>
+    <!-- ======= Journal Section ======= -->
+    <div id="journal" class="text-left paddsection">
 
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Technician Skill</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            
+            <div class="col-md-6 wow fadeInUp tech-skill">
+              <ul>
+                  <p>Programming Leanguage Html, PHP</p><br>
+                  <p>Javascript, Node JS, Express JS</p><br>
+                  <p>Using Git, Github, npm, python</p><br>
+                  <p>Create Front-End web with Bootstrap, CSS</p><br>
+              </ul>
             </div>
+
+            <div class="col-md-6 wow fadeInUp tech-skill">
+              <ul>
+                  <p>Using Framework Codeigniter, Laravel</p><br>
+                  <p>Handle Rest API, Postman</p><br>
+                  <p>Object Oriented Programming Java</p><br>
+                  <p>Sql & NoSql, PostgreSql, MySql, mongodb</p><br>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="jeda-page"></div>
+
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/html.png">
+                <span>HTML 5</span>
+                <p class="separator">language to build a web</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/css.png">
+                <span>Cascading Style Sheet</span>
+                <p class="separator">Rules to control component in a web</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/php.png">
+                <span>PHP</span>
+                <p class="separator">Script to update the web with own rules</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/js.png">
+                <span>JavaScript</span>
+                <p class="separator">Scripting taht allows to implement complex feature</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/bootstrap.png">
+                <span>Bootstrap</span>
+                <p class="separator">Open source CSS framework for designing web</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/codeigniter.png">
+                <span>Codeigniter</span>
+                <p class="separator">Open source application in the form PHP with MVC model dinamic website</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/laravel.png">
+                <span>Laravel</span>
+                <p class="separator">Open source PHP-based web application framework, MVC concept</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/npm.png">
+                <span>npm</span>
+                <p class="separator">Package manager for JavaScript for Node.js runtime environment</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/git.png">
+                <span>Git</span>
+                <p class="separator">Code management software for development of linux kernel</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/github.png">
+                <span>GitHub</span>
+                <p class="separator">Shared web hosting service for software development</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/node.png">
+                <span>Node.js</span>
+                <p class="separator">Runtime for a JavaScript environment outside the web browser</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/express.png">
+                <span>Express.js</span>
+                <p class="separator">Back end web framework for build RESTful API with Node.js</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/postman.png">
+                <span>Postman</span>
+                <p class="separator">API platform for developers</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/MySQL.png">
+                <span>MySQL</span>
+                <p class="separator">MySQL is a relational database management system</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/postgresql.png">
+                <span>PostgreSQL</span>
+                <p class="separator">Advanced, enterprise class open source relational database that support both SQL and JSON</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/mongodb.png">
+                <span>MongoDB</span>
+                <p class="separator">Non-relational document database that provides support for JSON</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/figma.png">
+                <span>Figma</span>
+                <p class="separator">collaborative web application for user interfaces in desktop application</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/logo/vscode.png">
+                <span>Visual Studio Code</span>
+                <p class="separator">Microsfot source code editing software.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <!-- Home Section -->
-        <section id="home" class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" style="margin-bottom: 100px;"></div>
+      </div>
 
-                    <div class="col-md-12 col-sm-12">
-                        <h1 class="wow fadeInUp head" data-wow-delay="0.6s">Iqbal Rahman</h1>
-                        <div class="row" style="margin-top: 5%">
-                            <div class="col-sm-9">
-                                <p class="wow fadeInUp lr-pd" data-wow-delay="0.8s">
-                                    Hello! My name is Iqbal Rahman. I am D3 informatics engineering (IT) from 
-                                    Electronic Engineering Polytechnic Institute of Surabaya (PENS), Indonesia.
-                                    
-                                </p>
-                                    <div class="container button-about" id="cta" style="padding-top: 0px;">
-                                        <a id="cta" href="About.html" class="wow fadeInUp btn btn-success" data-wow-delay="0.8s">More About Me</a>
-                                    </div>
-                            </div>
-                            <div class="col-sm-3 wow fadeInUp">
-                                <div class="portfolio-thumb">
-                                    <a href="assets/img/foto.jpg" class="image-popup">
-                                        <div class="portfolio-item-hover">
-                                            <i class="fa fa-plus"></i>
-                                        </div>
-                                        <img src="assets/img/foto.jpg" class="img-responsive" alt="Portfolio">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="jeda-page"></div>
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Experience History</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            
+            <div class="col-md-12 experience">
+              <ul>
+                  <h3>PT Elecomp Indonesia Group - Malang &emsp;(Internship Web Developer)</br>June 2022 - January 2023</h3>
+                  <p>- Fullstack Web Developer</p>
+                  <p>- Work with Codeigniter, MySql, GIS, etc</p>
+                  <p>- Update and fixing bug</p>
+                  <p>- Semi maintenance Web Service</p>
+              </ul>
+            </div>
+            <div class="col-md-12 experience">
+              <ul>
+                  <h3>Freelance on <a href="https://www.instagram.com/jasakuesioner/">jasakuesioner</a></h3>
+                  <p>- IT Developer</p>
+                  <p>- Working with python</p>
+                  <p>- Maintenance Web and Social Media</p>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="jeda-page"></div>
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Education History</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            
+            <div class="col-md-12 experience">
+              <ul>
+                  <h3>Electronic Engineering Institute of Surabaya (PENS) - Surabaya &emsp; (Diploma 3)</br>2020 - 2023</h3>
+                  <p>- Grade (IPK) : 3.53</p>
+                  <p>- Logika dan Algoritma Struktur Data, Desain dan Pemrograman Web, Basis Data</p>
+                  <p>- Pemrograman Berorientasi Obyek, GIS, Kecerdasan Buatan, Pengembangan Cloud</p>
+              </ul>
+            </div>
+            <div class="col-md-12 experience">
+              <ul>
+                  <h3>Nasional Senior High School 2 (SMAN 2) - Sidoarjo</br>2018 - 2020</h3>
+                  <p>- 2 Years (Akselerasi)</p>
+                  <p>- Science (IPA)</p>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Journal Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Portfolio</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-bussiness">Bussiness</li>
+              <li data-filter=".filter-blog">Blog Site</li>
+              <li data-filter=".filter-webgis">Web GIS</li>
+              <li data-filter=".filter-other">Others</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-blog">
+            <img src="assets/img/project/belajarekspor.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>belajarekspor.id</h4>
+              <p>Website to learn ekspor and search importirs</p>
+              <a href="assets/img/project/belajarekspor.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="belajarekspor.id"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/belajarekspor.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-blog">
+            <img src="assets/img/project/boi.png" class="img-fluid" alt="Beauty of Indonesia">
+            <div class="portfolio-info">
+              <h4>Beauty of Indonesia</h4>
+              <p>Website for Indonesian all beautifull things</p>
+              <a href="assets/img/project/boi.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Beauty of Indonesia"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/beautyofindonesia.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness">
+            <img src="assets/img/project/companyprofile.png" class="img-fluid" alt="Company Profile">
+            <div class="portfolio-info">
+              <h4>Company Profile</h4>
+              <p>Profile website for company</p>
+              <a href="assets/img/project/companyprofile.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Company Profile"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/companyprofile.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-blog">
+            <img src="assets/img/project/perpustakaan.png" class="img-fluid" alt="Perpustakaan">
+            <div class="portfolio-info">
+              <h4>Library Website</h4>
+              <p>Website to manage library data, books, etc</p>
+              <a href="assets/img/project/perpustakaan.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Perpustakaan"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/perpustakaan.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness">
+            <img src="assets/img/project/transprima.png" class="img-fluid" alt="Transprima Tour Organizer">
+            <div class="portfolio-info">
+              <h4>Transprima Tour Organizer</h4>
+              <p>Website tour and travel for PT Transprima Tour Organizer</p>
+              <a href="assets/img/project/transprima.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Transprima Tour Organizer"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/transprima.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webgis">
+            <img src="assets/img/project/webgis.png" class="img-fluid" alt="Web GIS">
+            <div class="portfolio-info">
+              <h4>Website GIS</h4>
+              <p>Website some drill location in Bojonegoro integrate with Maps</p>
+              <a href="assets/img/project/webgis.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web GIS"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details/webgis.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+            <div class="contact-contact">
+              <h2 class="mb-30">GET IN TOUCH</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="contact-details">
+                    <li><span>Sidoarjo</span></li>
+                    <li><span>Jawa Timur, Indonesia</span></li>
+                    <li><a href="https://wa.me/6287853008599"><i class="bi bi-whatsapp"></i></a><span> +62 878 5300 8599</span></li>
+                    <li><span><a href="mailto:iqbalrahman.amd@gmail.com">iqbalrahman.amd@gmail.com</a></span></li>
+                  </ul>
+                </div>
+                
+                <div class="col-lg-6">
 
                 </div>
+              </div>
+
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
 
-        <section id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" style="margin-bottom: 50px;"></div>
+  </main><!-- End #main -->
 
-                    <div class="col-md-12" style="max-height: 70px; margin-bottom: 20px">
-                        <div class="wow bounceIn section-title">
-                            <h2>My Project</h2>
-                        </div>
-                    </div>
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
 
-                    <div class="col-md-12 col-sm-12">
-                        
-                    
-                        <div class="work-box-section wow fadeInUp" data-wow-delay="1.4s">
-                            <div class="work-box-wrapper col4-work-box">
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/iqbal.rahman.3154/"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://wa.me/6287853008599"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="https://instagram.com/iqbalee_r"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/iqbalrahman-dev/"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="mailto:iqbalrahman.amd@gmail.com"><i class="bi bi-envelope"></i></a></li>
+        </ul>
 
-                                <div class="work-box graphic print branding html col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/belajarekspor.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/belajarekspor.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
+      </div>
 
-                                <div class="work-box graphic print col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/boi.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/boi.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
+      <p>&copy; Copyrights 2023. All rights reserved.</p>
+      <div class="credits">
+        Designed by <a href="index.html">Iqbal Rahman</a>
+      </div>
 
-                                <div class="work-box branding apps col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/companyprofile.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/companyprofile.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
+    </div>
+  </div><!-- End Footer -->
 
-                                <div class="work-box graphic apps col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/perpustakaan.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/perpustakaan.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-                                <div class="work-box web apps col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/transprima.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/transprima.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-                                <div class="work-box web print col-md-4 col-sm-6">
-                                    <div class="portfolio-thumb">
-                                        <a href="assets/project/webgis.png" class="image-popup">
-                                            <div class="portfolio-item-hover">
-                                                <i class="fa fa-plus"></i>
-                                            </div>
-                                            <img src="assets/project/webgis.png" class="img-responsive" alt="Portfolio">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-                        <div class="col-md-offset-2 col-md-8 col-sm-12" id="cta" style="padding-top: 0px; padding-bottom: 0px">
-                            <a href="Project.html" class="wow fadeInUp btn btn-success" data-wow-delay="0.8s">More About My Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+</body>
 
-        <!-- CTA Section -->
-        <section id="cta" class="bg-gray" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="wow bounceIn section-title">
-                            <h2>Connect With Me</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12">
-                        <div class="footer-copyright">
-                            <ul class="social-icon">	
-                                <li><a href="https://www.facebook.com/iqbal.rahman.3154/" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                                <li><a href="https://instagram.com/iqbalee_r" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                                <li><a href="https://www.linkedin.com/in/iqbalrahman-dev/" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
-                                <li><a href="https://wa.me/6287853008599" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                                <li><a href="mailto:iqbalrahman.amd@gmail.com" class="fa fa-envelope wow fadeInUp" data-wow-delay="1s"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <div id="footer"></div>
-    </body>
 </html>
