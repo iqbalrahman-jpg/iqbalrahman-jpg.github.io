@@ -1568,3 +1568,45 @@ blockquote {
 .logo-swipe img {
   height: 60px;
 }
+
+.btn-cv {
+  margin-top: 500px;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slide-bag {
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-logo {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+	
+	.slide-track {
+		animation: scroll 20s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+
+  .slide-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 250px;
+    height: 100px;
+  }
+
+	.slide-img img {
+	  max-height: 100px;
+		max-width: 250px;
+	}
+}
