@@ -227,7 +227,7 @@ p {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -337,7 +337,7 @@ p {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #4b4a4a;
@@ -1589,7 +1589,7 @@ blockquote {
 	overflow:hidden;
 	position: relative;
 	width: auto;
-	
+
 	.slide-track {
 		animation: scroll 20s linear infinite;
 		display: flex;
@@ -1600,7 +1600,7 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 250px;
     height: 100px;
   }
