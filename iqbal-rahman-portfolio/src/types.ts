@@ -11,6 +11,7 @@ export interface Project {
   tags: string[];
   link?: string;
   image?: string;
+  images?: string[];
 }
 
 export interface ProfileData {
