@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { ProfileData, Project } from "../types";
 import { ExternalLink } from "lucide-react";
 
@@ -41,18 +41,21 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       className="group bg-white rounded-3xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-xl transition-all"
     >
       <div className="aspect-video bg-zinc-100 relative overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={images[activeImage]}
-            src={images[activeImage]}
-            alt={`${project.title} preview ${activeImage + 1}`}
-            initial={{ x: 48, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -48, opacity: 0 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </AnimatePresence>
+        <motion.div
+          animate={{ x: `-${activeImage * 100}%` }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          className="flex h-full"
+        >
+          {images.map((image, imageIndex) => (
+            <div key={image} className="h-full w-full shrink-0">
+              <img
+                src={image}
+                alt={`${project.title} preview ${imageIndex + 1}`}
+                className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </motion.div>
         {images.length > 1 && (
           <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-zinc-900/30 px-2 py-1 opacity-0 backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
               {images.map((image, imageIndex) => (
