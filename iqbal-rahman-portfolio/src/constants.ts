@@ -52,9 +52,58 @@ export const fallbackData: ProfileData = {
   ],
   projects: [
     {
-      title: "Portfolio Website",
-      description: "A minimalist portfolio built with React and Tailwind CSS.",
-      tags: ["React", "Tailwind", "Motion"],
+      title: "Group App",
+      description: "An iOS application focused on delivering a structured and user-friendly mobile experience with a scalable architecture and polished interface.",
+      tags: ["SwiftUI", "Combine", "MVVM"],
+      image: "/assets/img/project/group.png",
+    },
+    {
+      title: "GroPanel",
+      description: "A product-focused application built with attention to structured workflows, interface clarity, and maintainable implementation.",
+      tags: ["Swift", "UIKit", "Modular Architecture"],
+      image: "/assets/img/project/gropanel.png",
+    },
+    {
+      title: "NexToken",
+      description: "A mobile product implementation centered on reliable feature delivery, clean user flows, and scalable app structure.",
+      tags: ["SwiftUI", "REST API", "MVVM"],
+      image: "/assets/img/project/nextoken.png",
+    },
+    {
+      title: "BOI",
+      description: "An application project designed to support practical user needs through a clean interface and solid technical foundation.",
+      tags: ["Swift", "Core Data", "App Development"],
+      image: "/assets/img/project/boi.png",
+    },
+    {
+      title: "Belajar Ekspor",
+      description: "A digital product with a focus on accessible information delivery, organized content flow, and dependable user experience.",
+      tags: ["SwiftUI", "UI Development", "Content App"],
+      image: "/assets/img/project/belajarekspor.png",
+    },
+    {
+      title: "Perpustakaan",
+      description: "A library-themed application built to organize information clearly and provide a simple, effective interface for users.",
+      tags: ["Swift", "Database", "Mobile App"],
+      image: "/assets/img/project/perpustakaan.png",
+    },
+    {
+      title: "Transprima",
+      description: "A project focused on usability, structured implementation, and delivering a polished experience for operational workflows.",
+      tags: ["Swift", "API Integration", "App Workflow"],
+      image: "/assets/img/project/transprima.png",
+    },
+    {
+      title: "Company Profile",
+      description: "A company profile project emphasizing clean presentation, strong visual structure, and clear communication of product value.",
+      tags: ["Frontend", "UI/UX", "Web Project"],
+      image: "/assets/img/project/companyprofile.png",
+    },
+    {
+      title: "WebGIS",
+      description: "A mapping and information-focused project built to present spatial data and user interactions in a clear and usable way.",
+      tags: ["Web App", "GIS", "Frontend"],
+      image: "/assets/img/project/webgis.png",
     }
   ],
   education: [
@@ -62,8 +111,8 @@ export const fallbackData: ProfileData = {
   ],
   socials: {
     linkedin: "https://www.linkedin.com/in/iqbalrahman-dev/",
-    github: "https://github.com/iqbalrahman",
-    email: "iqbalrahmanyogya@gmail.com",
+    github: "https://github.com/iqbalrahman-jpg",
+    email: "iqbalrahman.amd@gmail.com",
     resume: "/assets/file/iqbalRahman_CV.pdf"
   }
 };
