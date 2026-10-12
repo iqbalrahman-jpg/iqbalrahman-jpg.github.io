@@ -52,6 +52,20 @@ export const fallbackData: ProfileData = {
   ],
   projects: [
     {
+      title: "HRIS - Nexsoft",
+      description: "An employee-focused HR information system that simplifies daily work activities through ticketing task management, activity and work-time logging, daily lunch menu previews, and meal claim submissions.",
+      tags: ["iOS", "HRIS", "Productivity"],
+      link: "https://apps.apple.com/id/app/nexsoft/id6453476877",
+      image: "/assets/img/project/hris-nexsoft.png",
+    },
+    {
+      title: "NexTools",
+      description: "A reporting and document management mobile application with NexConsent and NexChief modules for business reports, document review and approval workflows, agreement monitoring, downloadable reports, sales insights, journey tracking, and customer updates.",
+      tags: ["iOS", "Reporting", "Document Workflow"],
+      link: "https://apps.apple.com/id/app/nextools/id6752489819",
+      image: "/assets/img/project/nextools.png",
+    },
+    {
       title: "Group App",
       description: "A super app that includes integrated communication features such as chat in a single mobile experience.",
       tags: ["SwiftUI", "Combine", "MVVM"],
@@ -119,6 +133,17 @@ export const fallbackData: ProfileData = {
       title: "Transprima",
       description: "A website built with React and CodeIgniter for transportation or travel booking with payment integration and reservation flows.",
       tags: ["React", "CodeIgniter", "Website"],
+      image: "/assets/img/project/transprima.png",
+      images: [
+        "/assets/img/project/transprima.png",
+        "/assets/img/project/transprima1.png",
+        "/assets/img/project/transprima2.png"
+      ],
+    },
+    {
+      title: "Transprima Website Prototype",
+      description: "A Figma design prototype covering the Transprima website's page layouts and feature flows, created by planning the interface, structuring each workflow, and organizing reusable visual components for a consistent experience.",
+      tags: ["Figma", "UI/UX Design", "Prototyping"],
       image: "/assets/img/project/transprima.png",
       images: [
         "/assets/img/project/transprima.png",

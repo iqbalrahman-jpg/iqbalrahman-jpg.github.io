@@ -14,7 +14,7 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({ project, index }: ProjectCardProps) {
-  const images = project.images?.length ? project.images : [project.image || `https://picsum.photos/seed/${project.title}/800/450`];
+  const images = project.images?.length ? project.images : project.image ? [project.image] : [];
   const [activeImage, setActiveImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -41,21 +41,34 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       className="group bg-white rounded-3xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-xl transition-all"
     >
       <div className="aspect-video bg-zinc-100 relative overflow-hidden">
-        <motion.div
-          animate={{ x: `-${activeImage * 100}%` }}
-          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-          className="flex h-full"
-        >
-          {images.map((image, imageIndex) => (
-            <div key={image} className="h-full w-full shrink-0">
-              <img
-                src={image}
-                alt={`${project.title} preview ${imageIndex + 1}`}
-                className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+        {images.length ? (
+          <motion.div
+            animate={{ x: `-${activeImage * 100}%` }}
+            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            className="flex h-full"
+          >
+            {images.map((image, imageIndex) => (
+              <div key={image} className="h-full w-full shrink-0">
+                <img
+                  src={image}
+                  alt={`${project.title} preview ${imageIndex + 1}`}
+                  className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            ))}
+          </motion.div>
+        ) : (
+          <div className="flex h-full items-center justify-center bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-600 p-8 text-center">
+            <div>
+              <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
+                Featured project
+              </span>
+              <span className="font-display text-3xl font-bold tracking-tight text-white">
+                {project.title}
+              </span>
             </div>
-          ))}
-        </motion.div>
+          </div>
+        )}
         {images.length > 1 && (
           <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-zinc-900/30 px-2 py-1 opacity-0 backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
               {images.map((image, imageIndex) => (
